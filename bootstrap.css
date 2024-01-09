@@ -1,0 +1,23 @@
+/* body {
+    background-color: rgba(110, 96, 96, 0.247);
+} */
+
+/* .customColor {
+    background-color: pink;
+    to make it work, forst remove bg-light from the html fine (54th line)
+} */
+
+
+.dropdown {
+    margin-left: 200px;
+}
+
+.carousel-item {
+    width: 40%;
+    height: 200px;
+}
+
+.card {
+    background-color: bisque;
+    margin-left: 30px;
+}

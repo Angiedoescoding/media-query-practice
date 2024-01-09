@@ -1,0 +1,94 @@
+body {
+    background-color: wheat;
+}
+
+/* ========= Phone first =========== */
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #cat{
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+        border: solid 5px greenyellow;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFti41n0aAY-onHTjDbCvPYFfJw9ak4Nh77X9g5DdndKwzmBJFcGQDxfs5z2xLObxnH0U&usqp=CAU");
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition-duration: 1s;
+    }
+
+    #cat:hover {
+        transform:rotate(-360deg);
+        border: solid 7px green;
+    }
+}
+
+/* ========= Tablet next =========== */
+
+@media screen and (min-width: 600px) {
+    body {
+        background-color: rgba(161, 83, 233, 0.744);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #cat {
+        width: 450px;
+        height: 300px;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMVHZP05u822mSKvGtSRO4qPLERy7l8mHNJq3HDS1K_lzSU3Kn4-u3dDBRj8YwqgNKPWk&usqp=CAU");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: auto;
+        border-radius: 20px;
+        margin-top: 100px;
+        transition-property: background-size, margin-left;
+        transition-duration: 5s;
+    }
+
+    #cat:hover{
+        background-size: 130%;
+        margin-left: 200px;
+    }
+}
+
+
+/* ========= Desktop =========== */
+
+@media screen and (min-width: 992px) {
+    body {
+        background-color: rgba(50, 48, 49, 0.744);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #cat {
+        width: 700px;
+        height: 600px;
+        background-image: url("https://i0.wp.com/suddenlycat.com/wp-content/uploads/2020/09/download.png?resize=520%2C480&ssl=1");
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* margin-top: auto; */
+        border-radius: 20px;
+        margin-top: 200px;
+        transition-property: margin-top;
+        transition-duration: 2s;
+    }
+
+    #cat:hover {
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        margin-left: 0;
+        margin-top: 0;
+        transition-duration: 1s;
+    }
+
+}
